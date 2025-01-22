@@ -9,7 +9,7 @@ require('dotenv').config()
 // middleware
 app.use(express.json());
 app.use(cors({
-    origin: ['http://localhost:5174'],
+    origin: ['https://online-book-store-1-cqok.onrender.com/'],
     credentials: true
 }))
 
