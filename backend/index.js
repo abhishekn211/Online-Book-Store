@@ -9,9 +9,9 @@ require('dotenv').config()
 // middleware
 app.use(express.json());
 app.use(cors({
-    origin: ['https://online-book-store-1-cqok.onrender.com/'],
+    origin: 'https://online-book-store-1-cqok.onrender.com',
     credentials: true
-}))
+}));
 
 // routes
 const bookRoutes = require('./src/books/book.route');
