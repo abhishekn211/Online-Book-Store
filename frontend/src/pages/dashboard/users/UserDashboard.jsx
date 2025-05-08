@@ -8,7 +8,7 @@ const UserDashboard = () => {
 
     if (isLoading) return <div>Loading...</div>;
     if (isError) return <div>Error getting orders data</div>;
-    const name=localstorage.getItem('userData');
+    const name=localStorage.getItem('userData');
 
     return (
         <div className=" bg-gray-100 py-16">
