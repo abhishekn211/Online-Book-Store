@@ -195,7 +195,7 @@ const Dashboard = () => {
               </div>
             </section>
             <section className="text-right font-semibold text-gray-500">
-              <a href="#" className="text-purple-600 hover:underline">Created by Abhishek Nigam</a> 
+              <a href="#" className="text-purple-600 hover:underline">Created by Kashish Bhatia</a> 
             </section>
     </>
   )
