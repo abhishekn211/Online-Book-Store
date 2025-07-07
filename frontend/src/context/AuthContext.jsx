@@ -50,7 +50,7 @@ export const AuthProvide = ({children}) => {
                 const userData = {
                     email, username: displayName, photo: photoURL
                 } 
-                localStorage.setitem('userData',userData);
+                localStorage.setItem('userData',userData);
             }
         })
 
