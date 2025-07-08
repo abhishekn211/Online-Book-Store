@@ -7,11 +7,11 @@ const port = process.env.PORT || 5000;
 require('dotenv').config()
 
 // middleware
-app.use(express.json());
 app.use(cors({
     origin: 'https://online-book-store-1-cqok.onrender.com',
     credentials: true
 }));
+app.use(express.json());
 
 // routes
 const bookRoutes = require('./src/books/book.route');
