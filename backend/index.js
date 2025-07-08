@@ -23,12 +23,13 @@ app.use("/api/books", bookRoutes)
 app.use("/api/orders", orderRoutes)
 app.use("/api/auth", userRoutes)
 app.use("/api/admin", adminRoutes)
+app.use("/", (req, res) => {
+    res.send("Book Store Server is running!");
+  });
 
 async function main() {
   await mongoose.connect(process.env.DB_URL);
-  app.use("/", (req, res) => {
-    res.send("Book Store Server is running!");
-  });
+  
 }
 
 main().then(() => console.log("Mongodb connect successfully!")).catch(err => console.log(err));
